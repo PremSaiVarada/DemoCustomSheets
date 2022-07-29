@@ -3,7 +3,7 @@
 
 A simple customizable plugin for .NET MAUI. It is purely built using .NET MAUI.
 
-Big thanks to [Matt Goldman](https://github.com/matt-goldman) by his wonderful concept of [#MAUIUIJuly](https://goforgoldman.com/2022/05/19/maui-ui-july.html), I learn so many new thing this in this month.
+Big thanks to [Matt Goldman](https://github.com/matt-goldman) by his wonderful concept of [#MAUIUIJuly](https://goforgoldman.com/2022/05/19/maui-ui-july.html), I learn so many new things in this month.
 
 All the contents that are provided for this [#MAUIUIJuly](https://goforgoldman.com/2022/05/19/maui-ui-july.html) are very easy to understand the .NET Maui UI structure
 
