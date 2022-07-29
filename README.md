@@ -1,4 +1,5 @@
-# DemoCustomSheets
+# DemoCustomSheets [![Nuget](https://img.shields.io/nuget/v/CustomSheets?logo=Nuget)](https://www.nuget.org/packages/CustomSheets) [![Nuget](https://img.shields.io/nuget/dt/CustomSheets)](https://www.nuget.org/packages/CustomSheets) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
 
 A simple customizable plugin for .NET MAUI. It is purely built using .NET MAUI.
 
@@ -45,3 +46,25 @@ xmlns:sheets="clr-namespace:CustomSheets;assembly=CustomSheets"
 </sheets:Sheet>
 ```
 ## Properties
+| Property | Data Type | Defalut Value| Info |
+| :--- | :----: | :--- | :--- |
+| SheetHeight | double | height of the screen - 200 | This defines the height of the sheet content area |
+| SheetWidth | double | width of the screen | This defines the width of the sheet content area |
+| SheetVisibel | bool | false | This property only to get that the sheet is visible or not |
+| IsCloseButtonVisible | bool | true | To hide/show the Close Button |
+| SheetBackground | Brush | Brush.Default | To set the gradient colors to the sheet |
+| SheetBackgroundColor | Color | White | To set the colors to the sheet |
+| IsRoundRectangleVisible | bool | true | To hide/show the RoundRectangel in sheet |
+| BackClickClose | bool | false | When click on the background to close the sheet |
+
+## Methods
+| Method | Explanation |
+| :--- | :--- |
+| OpenSheet | It will open the sheet |
+| CloseSheet | It will close the sheet |
+
+## Sample Output
+
+https://user-images.githubusercontent.com/110095923/181768492-4e530fb8-b863-48fd-b6be-352905ded9e5.mp4
+
+**Thanks to [@mattgoldman](https://twitter.com/mattgoldman/) and [Naweed Akram](https://twitter.com/xgeno)**
