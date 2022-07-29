@@ -1,41 +1,119 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sheets="clr-namespace:CustomSheets;assembly=CustomSheets"
+             Title="Demo Custom Sheets"
              x:Class="DemoCustomSheets.MainPage">
 
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
+    <ContentPage.Content>
+        <Grid>
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+            <VerticalStackLayout
+            VerticalOptions="Center"
+            Margin="32,0"
+            Spacing="16">
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
+                <Button Text="Defalut Sheet" Clicked="Button_Clicked"/>
+                <Button Text="Changing height and width" Clicked="Button_Clicked_1"/>
+                <Button Text="Close removed" Clicked="Button_Clicked_2"/>
+                <Button Text="when back button pressed" Clicked="Button_Clicked_3"/>
+                <Button Text="Sheet Background Color" Clicked="Button_Clicked_7"/>
+                <Button Text="Remove Round Rectangle" Clicked="Button_Clicked_5"/>
+                <Button Text="Sheet Background" Clicked="Button_Clicked_6"/>
+                <Button Text="Backgrounck click to close" Clicked="Button_Clicked_4" />
+                
+            </VerticalStackLayout>
 
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
+            <sheets:Sheet x:Name="DefaultSheet">
+                <sheets:Sheet.SheetContent>
+                    <StackLayout >
+                        <Label HorizontalOptions="Center" Text="Hello Developers" FontSize="Title"/>
+                        <Image
+                        Source="dotnet_bot.png" VerticalOptions="CenterAndExpand"
+                        SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                        HeightRequest="200" 
+                        HorizontalOptions="Center" />
+                    </StackLayout>
+                </sheets:Sheet.SheetContent>
+            </sheets:Sheet>
+            
+            <sheets:Sheet x:Name="CommonSheet">
+                <sheets:Sheet.SheetContent>
+                    <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="Payment Sucess ! " FontSize="Title" FontAttributes="Italic" TextColor="ForestGreen"/>
+                </sheets:Sheet.SheetContent>
+            </sheets:Sheet>
+            
+            <sheets:Sheet x:Name="CloseRemoved" IsCloseButtonVisible="False" SheetBackgroundColor="DarkGray">
+                <sheets:Sheet.SheetContent>
+                    <StackLayout>
+                        <ScrollView x:Name="Listbutton" IsVisible="false">
+                            <CollectionView x:Name="ApiListViewName">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Frame
+                                        Padding="15"
+                                        BackgroundColor="White"
+                                        CornerRadius="20"
+                                        HasShadow="True" Margin="10,5">
+                                            <StackLayout Orientation="Horizontal">
+                                                <Frame
+                                        Padding="0"
+                                        BorderColor="Blue"
+                                        CornerRadius="100">
+                                                    <ImageButton
+                                            Aspect="AspectFill"
+                                            HeightRequest="60"
+                                            Source="{Binding Image}"
+                                            WidthRequest="60" />
+                                                </Frame>
+                                                <StackLayout VerticalOptions="Center">
+                                                    <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Body"
+                                            Text="{Binding Name}" />
+                                                    <Label FontSize="Caption" Text="{Binding Location}" />
+                                                </StackLayout>
+                                                <ImageButton
+                                        BackgroundColor="Transparent"
+                                        HeightRequest="30"
+                                        HorizontalOptions="EndAndExpand"
+                                        IsVisible="{Binding ButtonEnabel}"
+                                        Source="maps.jpg"
+                                        WidthRequest="30" />
+                                            </StackLayout>
+                                        </Frame>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+                        </ScrollView>
+                        <Button IsVisible="false" x:Name="MonkeyButton" Clicked="SheetClose"  WidthRequest="100" HeightRequest="45" Margin="10" Text="Close"/>
+                        <ActivityIndicator IsRunning="True" VerticalOptions="Center" Color="Blue" x:Name="incdicate"/>
+                    </StackLayout>
+                </sheets:Sheet.SheetContent>
+            </sheets:Sheet>
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+            <sheets:Sheet x:Name="sheetview" >
+                <sheets:Sheet.SheetContent>
+                    <StackLayout>
+                        <Label Text="hello"/>
 
-        </VerticalStackLayout>
-    </ScrollView>
+                        <Image
+                        Source="dotnet_bot.png"
+                        SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                        HeightRequest="200" 
+                        HorizontalOptions="Center" />
+                        <Button Clicked="SheetClose" Text="close"/>
+                    </StackLayout>
+                </sheets:Sheet.SheetContent>
+                <sheets:Sheet.SheetBackground>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#ff6600" Offset="0.0"/>
+                        <GradientStop Color="#36D1DC" Offset="0.6"/>
+                        <GradientStop Color="#cc5233" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </sheets:Sheet.SheetBackground>
+            </sheets:Sheet>
 
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>
