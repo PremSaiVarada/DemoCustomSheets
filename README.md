@@ -1,4 +1,4 @@
-# DemoCustomSheets [![Nuget](https://img.shields.io/nuget/v/CustomSheets?logo=Nuget)](https://www.nuget.org/packages/CustomSheets) [![Nuget](https://img.shields.io/nuget/dt/CustomSheets)](https://www.nuget.org/packages/CustomSheets) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+# CustomSheets [![Nuget](https://img.shields.io/nuget/v/CustomSheets?logo=Nuget)](https://www.nuget.org/packages/CustomSheets) [![Nuget](https://img.shields.io/nuget/dt/CustomSheets)](https://www.nuget.org/packages/CustomSheets) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 
 A simple customizable plugin for .NET MAUI.
@@ -56,6 +56,7 @@ xmlns:sheets="clr-namespace:CustomSheets;assembly=CustomSheets"
 | SheetBackgroundColor | Color | White | To set the colors to the sheet |
 | IsRoundRectangleVisible | bool | true | To hide/show the RoundRectangel in sheet |
 | BackClickClose | bool | false | When click on the background to close the sheet |
+| RoundRectangleFill | Brush | Brush.Lightgray | Change/set the color to the RoundRectangle |
 
 ## Methods
 | Method | Explanation |
