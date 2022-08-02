@@ -28,7 +28,7 @@ You can get this from NuGet here: https://www.nuget.org/packages/CustomSheets/
 
 Or use the Package Manager:
 ```
-Install-Package CustomSheets -Version 1.0.4
+Install-Package CustomSheets -Version 1.0.6
 ```
 
 2.Add the following namespace declaration in your Xaml pages
