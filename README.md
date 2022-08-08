@@ -65,6 +65,11 @@ xmlns:sheets="clr-namespace:CustomSheets;assembly=CustomSheets"
 | CloseSheet | It will close the sheet |
 
 ## Sample Output
+
+Demo on Version 1.0.6
+
+![Screenshot (19)](https://user-images.githubusercontent.com/110095923/183350477-a7ea92a8-c155-4d4a-865e-fb79a7be4fd0.png)
+
 Demo on Version 1.0.4
 
 https://user-images.githubusercontent.com/110095923/181768492-4e530fb8-b863-48fd-b6be-352905ded9e5.mp4
