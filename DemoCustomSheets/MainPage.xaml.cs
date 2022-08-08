@@ -111,5 +111,15 @@ public partial class MainPage : ContentPage
         CommonSheet.SheetBackgroundColor = Colors.Pink;
         await CommonSheet.OpenSheet();
     }
+
+    private async void Button_Clicked_8(object sender, EventArgs e)
+    {
+        await RadioButtons.CloseSheet();
+    }
+
+    private async void Button_Clicked_9(object sender, EventArgs e)
+    {
+        await RadioButtons.OpenSheet();
+    }
 }
 

@@ -14,6 +14,7 @@
             Spacing="16">
 
                 <Button Text="Defalut Sheet" Clicked="Button_Clicked"/>
+                <Button Text="Question" Clicked="Button_Clicked_9" />
                 <Button Text="Changing height and width" Clicked="Button_Clicked_1"/>
                 <Button Text="Close removed" Clicked="Button_Clicked_2"/>
                 <Button Text="when back button pressed" Clicked="Button_Clicked_3"/>
@@ -43,7 +44,7 @@
                 </sheets:Sheet.SheetContent>
             </sheets:Sheet>
             
-            <sheets:Sheet x:Name="CloseRemoved" IsCloseButtonVisible="False" SheetBackgroundColor="DarkGray">
+            <sheets:Sheet x:Name="CloseRemoved" IsCloseButtonVisible="False" SheetBackgroundColor="Transparent">
                 <sheets:Sheet.SheetContent>
                     <StackLayout>
                         <ScrollView x:Name="Listbutton" IsVisible="false">
@@ -114,6 +115,26 @@
                 </sheets:Sheet.SheetBackground>
             </sheets:Sheet>
 
+            <sheets:Sheet x:Name="RadioButtons" IsCloseButtonVisible="False" SheetHeight="280" RoundRectangleFill="Gray">
+                <sheets:Sheet.ForButtomLayout>
+                    <Button Text="Skip" BackgroundColor="Transparent" TextColor="White" HorizontalOptions="End" Clicked="Button_Clicked_8" BorderWidth="0"/>
+                </sheets:Sheet.ForButtomLayout>
+                <sheets:Sheet.SheetContent>
+                    <StackLayout Spacing="16" Padding="5">
+                        <Label Text="Which social media you use most?"/>
+                        <Frame BorderColor="LightGray" CornerRadius="10" HeightRequest="40" Margin="5,0,5,0" Padding="0">
+                            <RadioButton GroupName="Question" Content="Facebook"/>
+                        </Frame>
+                        <Frame BorderColor="LightGray" CornerRadius="10" HeightRequest="40" Margin="5,0,5,0" Padding="0">
+                            <RadioButton GroupName="Question" Content="Insta"/>
+                        </Frame>
+                        <Frame BorderColor="LightGray" CornerRadius="10" HeightRequest="40" Margin="5,0,5,0" Padding="0">
+                            <RadioButton GroupName="Question" Content="WhatsApp"/>
+                        </Frame>
+                        <Button Text="Submit" Clicked="Button_Clicked_8"/>
+                    </StackLayout>
+                </sheets:Sheet.SheetContent>
+            </sheets:Sheet>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

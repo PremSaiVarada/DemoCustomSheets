@@ -53,7 +53,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="CustomSheets" Version="1.0.4" />
+	  <PackageReference Include="CustomSheets" Version="1.0.6" />
 	  <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 	</ItemGroup>
 
