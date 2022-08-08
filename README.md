@@ -57,6 +57,8 @@ xmlns:sheets="clr-namespace:CustomSheets;assembly=CustomSheets"
 | IsRoundRectangleVisible | bool | true | To hide/show the RoundRectangel in sheet |
 | BackClickClose | bool | false | When click on the background to close the sheet |
 | RoundRectangleFill | Brush | Brush.Lightgray | Change/set the color to the RoundRectangle |
+| ForButtomLayout ||| This propertie to add the Layout for the button |
+| SheetContent ||| This propertie to add the Layout for the Sheet |
 
 ## Methods
 | Method | Explanation |
@@ -74,4 +76,3 @@ Demo on Version 1.0.4
 
 https://user-images.githubusercontent.com/110095923/181768492-4e530fb8-b863-48fd-b6be-352905ded9e5.mp4
 
-**Thanks to [@mattgoldman](https://twitter.com/mattgoldman/) and [Naweed Akram](https://twitter.com/xgeno)**
