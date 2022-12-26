@@ -7,8 +7,6 @@ Big thanks to [Matt Goldman](https://github.com/matt-goldman) by his wonderful c
 
 All the blogs from this [#MAUIUIJuly](https://goforgoldman.com/2022/05/19/maui-ui-july.html) are very easy to understand the .NET Maui UI structure
 
-I saw some content from the [Naweed Akram](https://github.com/naweed/) which are pretty good, I mostly like that [MauiPlantsApp](https://github.com/naweed/MauiPlanets/) and by seeing the [BottomSheet](https://blogs.xgenoapps.com/post/2022/07/23/maui-bottom-sheet) I got an idea to create this BottomSheet as a plugin in NuGet, which is easy to use and I added some more properties for a more customized UI.
-
 With the knowledge of this program, I create one small/simple customizable sheets plugin and I hope, it while be usefull to us.
 
 ## Supported platforms
